@@ -1,4 +1,4 @@
- <meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400italic,400,500,500italic,700,700italic,900%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
 <style>
 body {
@@ -10,6 +10,12 @@ body {
 }
 .contact-box{
   overflow:hidden;
+}
+.logo{
+  text-align:center;
+}
+.image-logo{
+  max-width:100%;
 }
 h1,h2,h3{
   text-align:center;
@@ -51,9 +57,12 @@ var urlblog = getQueryVariable("blog");
 var titleblog = getQueryVariable('title').replace(/%20/g, " ");
 </script>
 <div class="contact-box">
-<h1>Contact Form</h1>
+<div class='logo'>
+<a href='http://www.mazblogger.com/'><img alt='Logo Blog' class='image-logo' height='50' src='https://1.bp.blogspot.com/-jqiklUmibmQ/WMLhEWuEQfI/AAAAAAAAAHY/9cCJOPGlWIIDec8oe4IjyJQpEXPZ-Yp2ACLcB/s1600/MazLogo.png' width='260'/></a>
+</div>
+
 <script>
-document.write('<h2>'+titleblog+'</h2>\
+document.write('<h2>Contact Form</h2>\
 <form action="https://formspree.io/'+ emailform +'" method="POST" target="_blank" name="sentMessage" id="contactForm">\
 <input type="hidden" name="_next" value="'+ urlthanks +'" />\
     <div class="styled-input">\
